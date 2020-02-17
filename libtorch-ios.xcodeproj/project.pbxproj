@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F9C3A6923F811520048A756 /* ls.pt in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C3A6823F811520048A756 /* ls.pt */; };
+		4F9C3A6F23FB05E10048A756 /* cnnmodel.pt in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C3A6E23FB05E00048A756 /* cnnmodel.pt */; };
+		4FD3A12F23F2C43C00DADC3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3A12E23F2C43C00DADC3B /* AppDelegate.swift */; };
+		4FD3A13123F2C43C00DADC3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3A13023F2C43C00DADC3B /* SceneDelegate.swift */; };
+		4FD3A13323F2C43C00DADC3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3A13223F2C43C00DADC3B /* ViewController.swift */; };
+		4FD3A13623F2C43C00DADC3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FD3A13423F2C43C00DADC3B /* Main.storyboard */; };
+		4FD3A13923F2C43C00DADC3B /* libtorch_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3A13723F2C43C00DADC3B /* libtorch_ios.xcdatamodeld */; };
+		4FD3A13B23F2C43F00DADC3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FD3A13A23F2C43F00DADC3B /* Assets.xcassets */; };
+		4FD3A13E23F2C43F00DADC3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FD3A13C23F2C43F00DADC3B /* LaunchScreen.storyboard */; };
+		4FD3A14923F2C43F00DADC3B /* libtorch_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3A14823F2C43F00DADC3B /* libtorch_iosTests.swift */; };
+		4FD3A15423F2C43F00DADC3B /* libtorch_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3A15323F2C43F00DADC3B /* libtorch_iosUITests.swift */; };
+		4FD3A16423F2C58000DADC3B /* TorchTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3A16323F2C58000DADC3B /* TorchTests.mm */; };
+		4FD3A16723F2F26C00DADC3B /* SpeechRecognizerTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3A16623F2F26C00DADC3B /* SpeechRecognizerTest.mm */; };
+		9795369687C45F1F23C58B9C /* libPods-libtorch-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832DE5826B501A0CF2894524 /* libPods-libtorch-ios.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4FD3A14523F2C43F00DADC3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FD3A12323F2C43C00DADC3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FD3A12A23F2C43C00DADC3B;
+			remoteInfo = "libtorch-ios";
+		};
+		4FD3A15023F2C43F00DADC3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FD3A12323F2C43C00DADC3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FD3A12A23F2C43C00DADC3B;
+			remoteInfo = "libtorch-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00925E51C21097B14613A5EB /* Pods-libtorch-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-libtorch-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-libtorch-ios/Pods-libtorch-ios.release.xcconfig"; sourceTree = "<group>"; };
+		4F9C3A6823F811520048A756 /* ls.pt */ = {isa = PBXFileReference; lastKnownFileType = file; path = ls.pt; sourceTree = "<group>"; };
+		4F9C3A6E23FB05E00048A756 /* cnnmodel.pt */ = {isa = PBXFileReference; lastKnownFileType = file; path = cnnmodel.pt; sourceTree = "<group>"; };
+		4FD3A12B23F2C43C00DADC3B /* libtorch-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "libtorch-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FD3A12E23F2C43C00DADC3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4FD3A13023F2C43C00DADC3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4FD3A13223F2C43C00DADC3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4FD3A13523F2C43C00DADC3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4FD3A13823F2C43C00DADC3B /* libtorch_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = libtorch_ios.xcdatamodel; sourceTree = "<group>"; };
+		4FD3A13A23F2C43F00DADC3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FD3A13D23F2C43F00DADC3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4FD3A13F23F2C43F00DADC3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FD3A14423F2C43F00DADC3B /* libtorch-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "libtorch-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FD3A14823F2C43F00DADC3B /* libtorch_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = libtorch_iosTests.swift; sourceTree = "<group>"; };
+		4FD3A14A23F2C43F00DADC3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FD3A14F23F2C43F00DADC3B /* libtorch-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "libtorch-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FD3A15323F2C43F00DADC3B /* libtorch_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = libtorch_iosUITests.swift; sourceTree = "<group>"; };
+		4FD3A15523F2C43F00DADC3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FD3A16223F2C58000DADC3B /* libtorch-ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libtorch-ios-Bridging-Header.h"; sourceTree = "<group>"; };
+		4FD3A16323F2C58000DADC3B /* TorchTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TorchTests.mm; sourceTree = "<group>"; };
+		4FD3A16523F2C5D200DADC3B /* TorchTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TorchTests.h; sourceTree = "<group>"; };
+		4FD3A16623F2F26C00DADC3B /* SpeechRecognizerTest.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SpeechRecognizerTest.mm; sourceTree = "<group>"; };
+		4FD3A16823F2F28A00DADC3B /* SpeechRecognizerTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeechRecognizerTest.h; sourceTree = "<group>"; };
+		832DE5826B501A0CF2894524 /* libPods-libtorch-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-libtorch-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7C21D97FAFC6EC011B50663 /* Pods-libtorch-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-libtorch-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-libtorch-ios/Pods-libtorch-ios.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FD3A12823F2C43C00DADC3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9795369687C45F1F23C58B9C /* libPods-libtorch-ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FD3A14123F2C43F00DADC3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FD3A14C23F2C43F00DADC3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		248B4668B7ED5B06FA95DED2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7C21D97FAFC6EC011B50663 /* Pods-libtorch-ios.debug.xcconfig */,
+				00925E51C21097B14613A5EB /* Pods-libtorch-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4F9C3A6723F811440048A756 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				4F9C3A6E23FB05E00048A756 /* cnnmodel.pt */,
+				4F9C3A6823F811520048A756 /* ls.pt */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		4FD3A12223F2C43C00DADC3B = {
+			isa = PBXGroup;
+			children = (
+				4FD3A12D23F2C43C00DADC3B /* libtorch-ios */,
+				4FD3A14723F2C43F00DADC3B /* libtorch-iosTests */,
+				4FD3A15223F2C43F00DADC3B /* libtorch-iosUITests */,
+				4FD3A12C23F2C43C00DADC3B /* Products */,
+				248B4668B7ED5B06FA95DED2 /* Pods */,
+				FA6C2ADC3F481F5BF77C1073 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4FD3A12C23F2C43C00DADC3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FD3A12B23F2C43C00DADC3B /* libtorch-ios.app */,
+				4FD3A14423F2C43F00DADC3B /* libtorch-iosTests.xctest */,
+				4FD3A14F23F2C43F00DADC3B /* libtorch-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FD3A12D23F2C43C00DADC3B /* libtorch-ios */ = {
+			isa = PBXGroup;
+			children = (
+				4F9C3A6723F811440048A756 /* models */,
+				4FD3A16123F2C53400DADC3B /* TorchModule */,
+				4FD3A12E23F2C43C00DADC3B /* AppDelegate.swift */,
+				4FD3A13023F2C43C00DADC3B /* SceneDelegate.swift */,
+				4FD3A13223F2C43C00DADC3B /* ViewController.swift */,
+				4FD3A13423F2C43C00DADC3B /* Main.storyboard */,
+				4FD3A13A23F2C43F00DADC3B /* Assets.xcassets */,
+				4FD3A13C23F2C43F00DADC3B /* LaunchScreen.storyboard */,
+				4FD3A13F23F2C43F00DADC3B /* Info.plist */,
+				4FD3A13723F2C43C00DADC3B /* libtorch_ios.xcdatamodeld */,
+			);
+			path = "libtorch-ios";
+			sourceTree = "<group>";
+		};
+		4FD3A14723F2C43F00DADC3B /* libtorch-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				4FD3A14823F2C43F00DADC3B /* libtorch_iosTests.swift */,
+				4FD3A14A23F2C43F00DADC3B /* Info.plist */,
+			);
+			path = "libtorch-iosTests";
+			sourceTree = "<group>";
+		};
+		4FD3A15223F2C43F00DADC3B /* libtorch-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4FD3A15323F2C43F00DADC3B /* libtorch_iosUITests.swift */,
+				4FD3A15523F2C43F00DADC3B /* Info.plist */,
+			);
+			path = "libtorch-iosUITests";
+			sourceTree = "<group>";
+		};
+		4FD3A16123F2C53400DADC3B /* TorchModule */ = {
+			isa = PBXGroup;
+			children = (
+				4FD3A16323F2C58000DADC3B /* TorchTests.mm */,
+				4FD3A16523F2C5D200DADC3B /* TorchTests.h */,
+				4FD3A16223F2C58000DADC3B /* libtorch-ios-Bridging-Header.h */,
+				4FD3A16623F2F26C00DADC3B /* SpeechRecognizerTest.mm */,
+				4FD3A16823F2F28A00DADC3B /* SpeechRecognizerTest.h */,
+			);
+			path = TorchModule;
+			sourceTree = "<group>";
+		};
+		FA6C2ADC3F481F5BF77C1073 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				832DE5826B501A0CF2894524 /* libPods-libtorch-ios.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FD3A12A23F2C43C00DADC3B /* libtorch-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FD3A15823F2C43F00DADC3B /* Build configuration list for PBXNativeTarget "libtorch-ios" */;
+			buildPhases = (
+				796A56D1FBEFBDD15D9C44A3 /* [CP] Check Pods Manifest.lock */,
+				4FD3A12723F2C43C00DADC3B /* Sources */,
+				4FD3A12823F2C43C00DADC3B /* Frameworks */,
+				4FD3A12923F2C43C00DADC3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libtorch-ios";
+			productName = "libtorch-ios";
+			productReference = 4FD3A12B23F2C43C00DADC3B /* libtorch-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4FD3A14323F2C43F00DADC3B /* libtorch-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FD3A15B23F2C43F00DADC3B /* Build configuration list for PBXNativeTarget "libtorch-iosTests" */;
+			buildPhases = (
+				4FD3A14023F2C43F00DADC3B /* Sources */,
+				4FD3A14123F2C43F00DADC3B /* Frameworks */,
+				4FD3A14223F2C43F00DADC3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FD3A14623F2C43F00DADC3B /* PBXTargetDependency */,
+			);
+			name = "libtorch-iosTests";
+			productName = "libtorch-iosTests";
+			productReference = 4FD3A14423F2C43F00DADC3B /* libtorch-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4FD3A14E23F2C43F00DADC3B /* libtorch-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FD3A15E23F2C43F00DADC3B /* Build configuration list for PBXNativeTarget "libtorch-iosUITests" */;
+			buildPhases = (
+				4FD3A14B23F2C43F00DADC3B /* Sources */,
+				4FD3A14C23F2C43F00DADC3B /* Frameworks */,
+				4FD3A14D23F2C43F00DADC3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FD3A15123F2C43F00DADC3B /* PBXTargetDependency */,
+			);
+			name = "libtorch-iosUITests";
+			productName = "libtorch-iosUITests";
+			productReference = 4FD3A14F23F2C43F00DADC3B /* libtorch-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FD3A12323F2C43C00DADC3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Nagy Daniel";
+				TargetAttributes = {
+					4FD3A12A23F2C43C00DADC3B = {
+						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
+					};
+					4FD3A14323F2C43F00DADC3B = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 4FD3A12A23F2C43C00DADC3B;
+					};
+					4FD3A14E23F2C43F00DADC3B = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 4FD3A12A23F2C43C00DADC3B;
+					};
+				};
+			};
+			buildConfigurationList = 4FD3A12623F2C43C00DADC3B /* Build configuration list for PBXProject "libtorch-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FD3A12223F2C43C00DADC3B;
+			productRefGroup = 4FD3A12C23F2C43C00DADC3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FD3A12A23F2C43C00DADC3B /* libtorch-ios */,
+				4FD3A14323F2C43F00DADC3B /* libtorch-iosTests */,
+				4FD3A14E23F2C43F00DADC3B /* libtorch-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FD3A12923F2C43C00DADC3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FD3A13E23F2C43F00DADC3B /* LaunchScreen.storyboard in Resources */,
+				4FD3A13B23F2C43F00DADC3B /* Assets.xcassets in Resources */,
+				4F9C3A6923F811520048A756 /* ls.pt in Resources */,
+				4F9C3A6F23FB05E10048A756 /* cnnmodel.pt in Resources */,
+				4FD3A13623F2C43C00DADC3B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FD3A14223F2C43F00DADC3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FD3A14D23F2C43F00DADC3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		796A56D1FBEFBDD15D9C44A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-libtorch-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FD3A12723F2C43C00DADC3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FD3A13323F2C43C00DADC3B /* ViewController.swift in Sources */,
+				4FD3A16723F2F26C00DADC3B /* SpeechRecognizerTest.mm in Sources */,
+				4FD3A12F23F2C43C00DADC3B /* AppDelegate.swift in Sources */,
+				4FD3A16423F2C58000DADC3B /* TorchTests.mm in Sources */,
+				4FD3A13923F2C43C00DADC3B /* libtorch_ios.xcdatamodeld in Sources */,
+				4FD3A13123F2C43C00DADC3B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FD3A14023F2C43F00DADC3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FD3A14923F2C43F00DADC3B /* libtorch_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FD3A14B23F2C43F00DADC3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FD3A15423F2C43F00DADC3B /* libtorch_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FD3A14623F2C43F00DADC3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FD3A12A23F2C43C00DADC3B /* libtorch-ios */;
+			targetProxy = 4FD3A14523F2C43F00DADC3B /* PBXContainerItemProxy */;
+		};
+		4FD3A15123F2C43F00DADC3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FD3A12A23F2C43C00DADC3B /* libtorch-ios */;
+			targetProxy = 4FD3A15023F2C43F00DADC3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4FD3A13423F2C43C00DADC3B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FD3A13523F2C43C00DADC3B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4FD3A13C23F2C43F00DADC3B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FD3A13D23F2C43F00DADC3B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FD3A15623F2C43F00DADC3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4FD3A15723F2C43F00DADC3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FD3A15923F2C43F00DADC3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7C21D97FAFC6EC011B50663 /* Pods-libtorch-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6TB6WEL6Z;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "libtorch-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nagyd.libtorch-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "libtorch-ios/TorchModule/libtorch-ios-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4FD3A15A23F2C43F00DADC3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00925E51C21097B14613A5EB /* Pods-libtorch-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6TB6WEL6Z;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "libtorch-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nagyd.libtorch-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "libtorch-ios/TorchModule/libtorch-ios-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4FD3A15C23F2C43F00DADC3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6TB6WEL6Z;
+				INFOPLIST_FILE = "libtorch-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nagyd.libtorch-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/libtorch-ios.app/libtorch-ios";
+			};
+			name = Debug;
+		};
+		4FD3A15D23F2C43F00DADC3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6TB6WEL6Z;
+				INFOPLIST_FILE = "libtorch-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nagyd.libtorch-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/libtorch-ios.app/libtorch-ios";
+			};
+			name = Release;
+		};
+		4FD3A15F23F2C43F00DADC3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6TB6WEL6Z;
+				INFOPLIST_FILE = "libtorch-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nagyd.libtorch-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "libtorch-ios";
+			};
+			name = Debug;
+		};
+		4FD3A16023F2C43F00DADC3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6TB6WEL6Z;
+				INFOPLIST_FILE = "libtorch-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Nagyd.libtorch-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "libtorch-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FD3A12623F2C43C00DADC3B /* Build configuration list for PBXProject "libtorch-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FD3A15623F2C43F00DADC3B /* Debug */,
+				4FD3A15723F2C43F00DADC3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FD3A15823F2C43F00DADC3B /* Build configuration list for PBXNativeTarget "libtorch-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FD3A15923F2C43F00DADC3B /* Debug */,
+				4FD3A15A23F2C43F00DADC3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FD3A15B23F2C43F00DADC3B /* Build configuration list for PBXNativeTarget "libtorch-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FD3A15C23F2C43F00DADC3B /* Debug */,
+				4FD3A15D23F2C43F00DADC3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FD3A15E23F2C43F00DADC3B /* Build configuration list for PBXNativeTarget "libtorch-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FD3A15F23F2C43F00DADC3B /* Debug */,
+				4FD3A16023F2C43F00DADC3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4FD3A13723F2C43C00DADC3B /* libtorch_ios.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4FD3A13823F2C43C00DADC3B /* libtorch_ios.xcdatamodel */,
+			);
+			currentVersion = 4FD3A13823F2C43C00DADC3B /* libtorch_ios.xcdatamodel */;
+			path = libtorch_ios.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4FD3A12323F2C43C00DADC3B /* Project object */;
+}

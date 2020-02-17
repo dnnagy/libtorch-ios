@@ -1,0 +1,20 @@
+PODS:
+  - LibTorch (1.4.0):
+    - LibTorch/Core (= 1.4.0)
+  - LibTorch/Core (1.4.0):
+    - LibTorch/Torch
+  - LibTorch/Torch (1.4.0)
+
+DEPENDENCIES:
+  - LibTorch (~> 1.4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - LibTorch
+
+SPEC CHECKSUMS:
+  LibTorch: 37dfd10df8a064f705d81ede22098d5a5e82571b
+
+PODFILE CHECKSUM: 7fafe98ed88bba1aa1a59862f93a8ca3abf5bdbb
+
+COCOAPODS: 1.5.3

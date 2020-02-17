@@ -24,7 +24,6 @@ class ViewController: UIViewController {
             // This model takes a tensor of shape (T, N, C, H, W)
             var tensor = (1...T*N*C*H*W).map({_ in Float(Int.random(in: -255...255))/255.0})
             let output = TorchTests.runModel(atFilePath: filePath, withTensorData: UnsafeMutableRawPointer(&tensor), ofShape: [T, N, C, H, W] as [NSNumber])
-            print(output?.count)
             print(output)
         }
         

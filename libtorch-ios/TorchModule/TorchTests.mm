@@ -49,7 +49,7 @@
     return nil;
 }
 
-+ (nullable NSArray<NSNumber*>*)runModelAtFilePath:(NSString*)filePath withTensorData:(void*) data ofShape:(NSArray*) shape {
++ (nullable NSDictionary*)runModelAtFilePath:(NSString*)filePath withTensorData:(void*) data ofShape:(NSArray*) shape {
     
     torch::jit::script::Module impl;
     
@@ -84,7 +84,12 @@
         for (int i = 0; i < outputTensor.numel() ; i++) {
           [results addObject:@(floatBuffer[i])];
         }
-        return [results copy];
+        
+        NSMutableArray* output_shape = [[NSMutableArray alloc] init];
+        for (int i=0; i < outputTensor.sizes().size(); i++){
+            [output_shape addObject:@(outputTensor.sizes().at(i))];
+        }
+        return @{ @"data": [results copy], @"shape": [output_shape copy] };
     } catch (const std::exception& e) {
         NSLog(@"%s", e.what());
     }

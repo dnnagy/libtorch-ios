@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (nullable NSArray<NSNumber*>*)testAddRandomTensors
 __attribute__((swift_name("testAddRandomTensors()")));
 
-+ (nullable NSArray<NSNumber*>*)runModelAtFilePath:(NSString*)filePath withTensorData:(void*) data ofShape:(NSArray<NSNumber*>*) shape
++ (nullable NSDictionary*)runModelAtFilePath:(NSString*)filePath withTensorData:(void*) data ofShape:(NSArray<NSNumber*>*) shape
 __attribute__((swift_name("runModelAt(filePath:, data:, shape:)")));
 
 + (nullable void*)testSTFT

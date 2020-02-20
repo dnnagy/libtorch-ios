@@ -9,6 +9,8 @@
 #import "TorchTests.h"
 #import <LibTorch/LibTorch.h>
 #import <algorithm>
+#import <cstdlib>
+#import "fft.h"
 
 @implementation TorchTests
 
@@ -49,6 +51,25 @@
     return nil;
 }
 
++ (nullable void*)testFFTPack {
+    
+    int n = 1024;
+    float wsave[2*n + 15];
+    int ifac[n+15];
+    
+    
+    float arr[n];
+    for (int k=0; k< n; k++){
+        arr[k] = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
+    }
+    
+    __ogg_fdrffti(1024, wsave, ifac);
+    __ogg_fdrfftf(1024, arr, wsave, ifac);
+    
+    std::cout<<arr<<std::endl;
+    return nil;
+}
+
 + (nullable NSDictionary*)runModelAtFilePath:(NSString*)filePath withTensorData:(void*) data ofShape:(NSArray*) shape {
     
     torch::jit::script::Module impl;
@@ -69,7 +90,7 @@
         }
         
         torch::Tensor tensor = torch::from_blob(data, at::IntArrayRef(arr, shape.count), torch::kFloat);
-        std::cout << "Input tensor:" << tensor << std::endl;
+        //std::cout << "Input tensor:" << tensor << std::endl;
         
         // Run the model
         torch::autograd::AutoGradMode guard(false);

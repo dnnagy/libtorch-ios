@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F921A7823FE9AD800BC004F /* CNN_LSTM_trained.pt in Resources */ = {isa = PBXBuildFile; fileRef = 4F921A7723FE9AD800BC004F /* CNN_LSTM_trained.pt */; };
+		4F921A7B23FEA73C00BC004F /* tensor-28.metadata in Resources */ = {isa = PBXBuildFile; fileRef = 4F921A7923FEA73B00BC004F /* tensor-28.metadata */; };
+		4F921A7C23FEA73C00BC004F /* tensor-28.bin in Resources */ = {isa = PBXBuildFile; fileRef = 4F921A7A23FEA73C00BC004F /* tensor-28.bin */; };
 		4F9C3A6923F811520048A756 /* ls.pt in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C3A6823F811520048A756 /* ls.pt */; };
-		4F9C3A6F23FB05E10048A756 /* cnnmodel.pt in Resources */ = {isa = PBXBuildFile; fileRef = 4F9C3A6E23FB05E00048A756 /* cnnmodel.pt */; };
 		4FD3A12F23F2C43C00DADC3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3A12E23F2C43C00DADC3B /* AppDelegate.swift */; };
 		4FD3A13123F2C43C00DADC3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3A13023F2C43C00DADC3B /* SceneDelegate.swift */; };
 		4FD3A13323F2C43C00DADC3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3A13223F2C43C00DADC3B /* ViewController.swift */; };
@@ -20,6 +22,7 @@
 		4FD3A15423F2C43F00DADC3B /* libtorch_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3A15323F2C43F00DADC3B /* libtorch_iosUITests.swift */; };
 		4FD3A16423F2C58000DADC3B /* TorchTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3A16323F2C58000DADC3B /* TorchTests.mm */; };
 		4FD3A16723F2F26C00DADC3B /* SpeechRecognizerTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3A16623F2F26C00DADC3B /* SpeechRecognizerTest.mm */; };
+		4FDAE4E223FC0B0D004E1CD8 /* fft.h in Sources */ = {isa = PBXBuildFile; fileRef = 4FDAE4E123FC0B0D004E1CD8 /* fft.h */; };
 		9795369687C45F1F23C58B9C /* libPods-libtorch-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832DE5826B501A0CF2894524 /* libPods-libtorch-ios.a */; };
 /* End PBXBuildFile section */
 
@@ -42,8 +45,10 @@
 
 /* Begin PBXFileReference section */
 		00925E51C21097B14613A5EB /* Pods-libtorch-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-libtorch-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-libtorch-ios/Pods-libtorch-ios.release.xcconfig"; sourceTree = "<group>"; };
+		4F921A7723FE9AD800BC004F /* CNN_LSTM_trained.pt */ = {isa = PBXFileReference; lastKnownFileType = file; path = CNN_LSTM_trained.pt; sourceTree = "<group>"; };
+		4F921A7923FEA73B00BC004F /* tensor-28.metadata */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "tensor-28.metadata"; sourceTree = "<group>"; };
+		4F921A7A23FEA73C00BC004F /* tensor-28.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "tensor-28.bin"; sourceTree = "<group>"; };
 		4F9C3A6823F811520048A756 /* ls.pt */ = {isa = PBXFileReference; lastKnownFileType = file; path = ls.pt; sourceTree = "<group>"; };
-		4F9C3A6E23FB05E00048A756 /* cnnmodel.pt */ = {isa = PBXFileReference; lastKnownFileType = file; path = cnnmodel.pt; sourceTree = "<group>"; };
 		4FD3A12B23F2C43C00DADC3B /* libtorch-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "libtorch-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FD3A12E23F2C43C00DADC3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FD3A13023F2C43C00DADC3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +69,7 @@
 		4FD3A16523F2C5D200DADC3B /* TorchTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TorchTests.h; sourceTree = "<group>"; };
 		4FD3A16623F2F26C00DADC3B /* SpeechRecognizerTest.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SpeechRecognizerTest.mm; sourceTree = "<group>"; };
 		4FD3A16823F2F28A00DADC3B /* SpeechRecognizerTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeechRecognizerTest.h; sourceTree = "<group>"; };
+		4FDAE4E123FC0B0D004E1CD8 /* fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fft.h; sourceTree = "<group>"; };
 		832DE5826B501A0CF2894524 /* libPods-libtorch-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-libtorch-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C21D97FAFC6EC011B50663 /* Pods-libtorch-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-libtorch-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-libtorch-ios/Pods-libtorch-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,10 +109,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4F921A7223FE9A7C00BC004F /* tensors */ = {
+			isa = PBXGroup;
+			children = (
+				4F921A7A23FEA73C00BC004F /* tensor-28.bin */,
+				4F921A7923FEA73B00BC004F /* tensor-28.metadata */,
+			);
+			path = tensors;
+			sourceTree = "<group>";
+		};
 		4F9C3A6723F811440048A756 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				4F9C3A6E23FB05E00048A756 /* cnnmodel.pt */,
+				4F921A7723FE9AD800BC004F /* CNN_LSTM_trained.pt */,
 				4F9C3A6823F811520048A756 /* ls.pt */,
 			);
 			path = models;
@@ -137,6 +152,8 @@
 		4FD3A12D23F2C43C00DADC3B /* libtorch-ios */ = {
 			isa = PBXGroup;
 			children = (
+				4F921A7223FE9A7C00BC004F /* tensors */,
+				4FDAE4E023FC0B0D004E1CD8 /* fftpack */,
 				4F9C3A6723F811440048A756 /* models */,
 				4FD3A16123F2C53400DADC3B /* TorchModule */,
 				4FD3A12E23F2C43C00DADC3B /* AppDelegate.swift */,
@@ -179,6 +196,14 @@
 				4FD3A16823F2F28A00DADC3B /* SpeechRecognizerTest.h */,
 			);
 			path = TorchModule;
+			sourceTree = "<group>";
+		};
+		4FDAE4E023FC0B0D004E1CD8 /* fftpack */ = {
+			isa = PBXGroup;
+			children = (
+				4FDAE4E123FC0B0D004E1CD8 /* fft.h */,
+			);
+			path = fftpack;
 			sourceTree = "<group>";
 		};
 		FA6C2ADC3F481F5BF77C1073 /* Frameworks */ = {
@@ -296,10 +321,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FD3A13E23F2C43F00DADC3B /* LaunchScreen.storyboard in Resources */,
+				4F921A7C23FEA73C00BC004F /* tensor-28.bin in Resources */,
 				4FD3A13B23F2C43F00DADC3B /* Assets.xcassets in Resources */,
 				4F9C3A6923F811520048A756 /* ls.pt in Resources */,
-				4F9C3A6F23FB05E10048A756 /* cnnmodel.pt in Resources */,
+				4F921A7823FE9AD800BC004F /* CNN_LSTM_trained.pt in Resources */,
 				4FD3A13623F2C43C00DADC3B /* Main.storyboard in Resources */,
+				4F921A7B23FEA73C00BC004F /* tensor-28.metadata in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +376,7 @@
 				4FD3A16723F2F26C00DADC3B /* SpeechRecognizerTest.mm in Sources */,
 				4FD3A12F23F2C43C00DADC3B /* AppDelegate.swift in Sources */,
 				4FD3A16423F2C58000DADC3B /* TorchTests.mm in Sources */,
+				4FDAE4E223FC0B0D004E1CD8 /* fft.h in Sources */,
 				4FD3A13923F2C43C00DADC3B /* libtorch_ios.xcdatamodeld in Sources */,
 				4FD3A13123F2C43C00DADC3B /* SceneDelegate.swift in Sources */,
 			);

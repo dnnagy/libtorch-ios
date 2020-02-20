@@ -25,6 +25,9 @@ __attribute__((swift_name("runModelAt(filePath:, data:, shape:)")));
 + (nullable void*)testSTFT
 __attribute__((swift_name("testSTFT()")));
 
++ (nullable void*)testFFTPack
+__attribute__((swift_name("testFFTPack()")));
+
 + (nullable void*)testAutograd
 __attribute__((swift_name("testAutograd()")));
 

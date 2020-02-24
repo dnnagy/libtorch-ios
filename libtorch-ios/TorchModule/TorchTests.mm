@@ -90,7 +90,6 @@
         }
         
         torch::Tensor tensor = torch::from_blob(data, at::IntArrayRef(arr, shape.count), torch::kFloat);
-        //std::cout << "Input tensor:" << tensor << std::endl;
         
         // Run the model
         torch::autograd::AutoGradMode guard(false);
@@ -104,6 +103,59 @@
         NSMutableArray* results = [[NSMutableArray alloc] init];
         for (int i = 0; i < outputTensor.numel() ; i++) {
           [results addObject:@(floatBuffer[i])];
+        }
+        
+        NSMutableArray* output_shape = [[NSMutableArray alloc] init];
+        for (int i=0; i < outputTensor.sizes().size(); i++){
+            [output_shape addObject:@(outputTensor.sizes().at(i))];
+        }
+        return @{ @"data": [results copy], @"shape": [output_shape copy] };
+    } catch (const std::exception& e) {
+        NSLog(@"%s", e.what());
+    }
+    return nil;
+}
+
++ (nullable NSDictionary*)runModelAtFilePath:(NSString*)filePath withTensorData:(void*) data ofShape:(NSArray<NSNumber*>*) shape applyingArgmaxOnDim:(uint64_t) argmaxDim {
+    
+    torch::jit::script::Module impl;
+    
+    try {
+        auto qengines = at::globalContext().supportedQEngines();
+        if (std::find(qengines.begin(), qengines.end(), at::QEngine::QNNPACK) != qengines.end()) {
+            at::globalContext().setQEngine(at::QEngine::QNNPACK);
+        }
+        
+        impl = torch::jit::load(filePath.UTF8String);
+        impl.eval();
+        
+        // Construct torch tensor from data
+        int64_t arr[shape.count];
+        for(int i=0; i < shape.count; i++) {
+           arr[i] = [[shape objectAtIndex:i] unsignedIntValue];
+        }
+        
+        
+        // Disable autograd
+        torch::autograd::AutoGradMode guard(false);
+        at::AutoNonVariableTypeMode non_var_type_mode(true);
+        
+        // Input tensor
+        torch::Tensor tensor = torch::from_blob(data, at::IntArrayRef(arr, shape.count), torch::kFloat);
+        std::cout << "Input tensor shape = " << tensor.sizes() << std::endl;
+        
+        auto outputTensor = impl.forward({tensor}).toTensor();
+        
+        // Apply argmax
+        outputTensor = at::argmax(outputTensor, argmaxDim);
+        int64_t* buffer = outputTensor.data_ptr<int64_t>();
+        if (!buffer) {
+          return nil;
+        }
+        
+        NSMutableArray* results = [[NSMutableArray alloc] init];
+        for (int i = 0; i < outputTensor.numel() ; i++) {
+          [results addObject:@(buffer[i])];
         }
         
         NSMutableArray* output_shape = [[NSMutableArray alloc] init];

@@ -9,44 +9,44 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    func testCNNBaseline() {
+        let modelFilePath = Bundle.main.path(forResource: "CNN_LSTM_trained", ofType: "pt")!
+        
+        let tensorFilePath = Bundle.main.path(forResource: "tensor-28", ofType: "bin")!
+        let file: FileHandle? = FileHandle(forReadingAtPath: tensorFilePath)
+        let data = file!.readDataToEndOfFile()
+        let pointer = UnsafeMutablePointer<UInt8>.allocate(capacity: data.count)
+        data.copyBytes(to: pointer, count: data.count)
+        let rawPointer = UnsafeMutableRawPointer(pointer)
+             
+        let output = TorchTests.runModel(atFilePath: modelFilePath, withTensorData: rawPointer, ofShape: [1, 16, 1, 49, 15],
+                                         applyingArgmaxOnDim: 1)
+             
+        print("Shape:", output!["shape"])
+        print("Data:", output!["data"])
+    }
+    
+    func testWav2Cat() {
+        let modelFilePath = Bundle.main.path(forResource: "Wav2Cat_baseline_scripted", ofType: "pt")!
+        
+        let tensorFilePath = Bundle.main.path(forResource: "label=7.0-len=5598", ofType: "bin")!
+        let file: FileHandle? = FileHandle(forReadingAtPath: tensorFilePath)
+        let data = file!.readDataToEndOfFile()
+        let pointer = UnsafeMutablePointer<UInt8>.allocate(capacity: data.count)
+        data.copyBytes(to: pointer, count: data.count)
+        let rawPointer = UnsafeMutableRawPointer(pointer)
+        
+        let output = TorchTests.runModel(atFilePath: modelFilePath, withTensorData: rawPointer, ofShape: [1, 1, 5598], applyingArgmaxOnDim: 1)
+        
+        print("Shape:", output!["shape"])
+        print("Data:", output!["data"])
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-//        if let filePath = Bundle.main.path(forResource: "cnnmodel", ofType: "pt") {
-//            let C = 1
-//            let H = 42
-//            let W = 10
-//            let N = 1
-//            let T = 12
-//            
-//            // This model takes a tensor of shape (T, N, C, H, W)
-//            var tensor = (1...T*N*C*H*W).map({_ in Float(Int.random(in: -255...255))/255.0})
-//            let output = TorchTests.runModel(atFilePath: filePath, withTensorData: UnsafeMutableRawPointer(&tensor), ofShape: [T, N, C, H, W] as [NSNumber])
-//            print(output)
-//        }
-//        TorchTests.testFFTPack()
-        
-        // Test CNN_LSTM_trained
-        if let modelFilePath = Bundle.main.path(forResource: "CNN_LSTM_trained", ofType: "pt") {
-            if let tensorFilePath = Bundle.main.path(forResource: "tensor-28", ofType: "bin") {
-                // Load tensor data
-                let file: FileHandle? = FileHandle(forReadingAtPath: tensorFilePath)
-                
-                // Read all the data
-                let data = file!.readDataToEndOfFile()
-                let pointer = UnsafeMutablePointer<UInt8>.allocate(capacity: data.count)
-                data.copyBytes(to: pointer, count: data.count)
-                let rawPointer = UnsafeMutableRawPointer(pointer)
-                
-                let output = TorchTests.runModel(atFilePath: modelFilePath, withTensorData: rawPointer, ofShape: [1, 16, 1, 49, 15])
-                
-                print("Shape:", output!["shape"])
-                print("Data:", output!["data"])
-            }
-        }
-        
+        testWav2Cat()
+        //testCNNBaseline()
     }
     
 }

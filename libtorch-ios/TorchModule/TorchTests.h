@@ -22,6 +22,9 @@ __attribute__((swift_name("testAddRandomTensors()")));
 + (nullable NSDictionary*)runModelAtFilePath:(NSString*)filePath withTensorData:(void*) data ofShape:(NSArray<NSNumber*>*) shape
 __attribute__((swift_name("runModelAt(filePath:, data:, shape:)")));
 
++ (nullable NSDictionary*)runModelAtFilePath:(NSString*)filePath withTensorData:(void*) data ofShape:(NSArray<NSNumber*>*) shape applyingArgmaxOnDim:(uint64_t) argmaxDim
+__attribute__((swift_name("runModelAt(filePath:, data:, shape:, argmaxDim:)")));
+
 + (nullable void*)testSTFT
 __attribute__((swift_name("testSTFT()")));
 

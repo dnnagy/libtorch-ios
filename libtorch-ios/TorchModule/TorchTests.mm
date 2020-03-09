@@ -10,7 +10,8 @@
 #import <LibTorch/LibTorch.h>
 #import <algorithm>
 #import <cstdlib>
-#import "fft.h"
+#import "fftpack.h"
+
 
 @implementation TorchTests
 
@@ -51,22 +52,31 @@
     return nil;
 }
 
+void print_array(float* arr, int n){
+    std::cout << "[";
+    for(int k=0; k<n-1; k++){
+        std::cout<<arr[k] << ", ";
+    }
+    std::cout << arr[n-1] << "]" << std::endl;
+}
+
 + (nullable void*)testFFTPack {
     
-    int n = 1024;
+    int n = 9;
     float wsave[2*n + 15];
     int ifac[n+15];
     
+    float arr[9] = {11.0, 3.0, 4.05, 9.0, 10.3, 8.0, 4.934, 5.11, 9.12};
     
-    float arr[n];
-    for (int k=0; k< n; k++){
-        arr[k] = static_cast <float> (rand()) / static_cast <float> (RAND_MAX);
-    }
     
-    __ogg_fdrffti(1024, wsave, ifac);
-    __ogg_fdrfftf(1024, arr, wsave, ifac);
+    // initialize  rfftf and rfftb
+    __ogg_fdrffti(n, wsave, ifac);
     
-    std::cout<<arr<<std::endl;
+    // forward transform of a real periodic sequence
+    __ogg_fdrfftf(n, arr, wsave, ifac);
+    
+    print_array(arr, n);
+    
     return nil;
 }
 

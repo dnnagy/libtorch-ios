@@ -28,7 +28,7 @@
 		4FD3A15423F2C43F00DADC3B /* libtorch_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3A15323F2C43F00DADC3B /* libtorch_iosUITests.swift */; };
 		4FD3A16423F2C58000DADC3B /* TorchTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3A16323F2C58000DADC3B /* TorchTests.mm */; };
 		4FD3A16723F2F26C00DADC3B /* SpeechRecognizerTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FD3A16623F2F26C00DADC3B /* SpeechRecognizerTest.mm */; };
-		4FDAE4E223FC0B0D004E1CD8 /* fft.h in Sources */ = {isa = PBXBuildFile; fileRef = 4FDAE4E123FC0B0D004E1CD8 /* fft.h */; };
+		4FDAE4E223FC0B0D004E1CD8 /* fftpack.h in Sources */ = {isa = PBXBuildFile; fileRef = 4FDAE4E123FC0B0D004E1CD8 /* fftpack.h */; };
 		9795369687C45F1F23C58B9C /* libPods-libtorch-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832DE5826B501A0CF2894524 /* libPods-libtorch-ios.a */; };
 /* End PBXBuildFile section */
 
@@ -81,7 +81,7 @@
 		4FD3A16523F2C5D200DADC3B /* TorchTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TorchTests.h; sourceTree = "<group>"; };
 		4FD3A16623F2F26C00DADC3B /* SpeechRecognizerTest.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SpeechRecognizerTest.mm; sourceTree = "<group>"; };
 		4FD3A16823F2F28A00DADC3B /* SpeechRecognizerTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeechRecognizerTest.h; sourceTree = "<group>"; };
-		4FDAE4E123FC0B0D004E1CD8 /* fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fft.h; sourceTree = "<group>"; };
+		4FDAE4E123FC0B0D004E1CD8 /* fftpack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fftpack.h; sourceTree = "<group>"; };
 		832DE5826B501A0CF2894524 /* libPods-libtorch-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-libtorch-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C21D97FAFC6EC011B50663 /* Pods-libtorch-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-libtorch-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-libtorch-ios/Pods-libtorch-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -219,7 +219,7 @@
 		4FDAE4E023FC0B0D004E1CD8 /* fftpack */ = {
 			isa = PBXGroup;
 			children = (
-				4FDAE4E123FC0B0D004E1CD8 /* fft.h */,
+				4FDAE4E123FC0B0D004E1CD8 /* fftpack.h */,
 			);
 			path = fftpack;
 			sourceTree = "<group>";
@@ -400,7 +400,7 @@
 				4FD3A16723F2F26C00DADC3B /* SpeechRecognizerTest.mm in Sources */,
 				4FD3A12F23F2C43C00DADC3B /* AppDelegate.swift in Sources */,
 				4FD3A16423F2C58000DADC3B /* TorchTests.mm in Sources */,
-				4FDAE4E223FC0B0D004E1CD8 /* fft.h in Sources */,
+				4FDAE4E223FC0B0D004E1CD8 /* fftpack.h in Sources */,
 				4FD3A13923F2C43C00DADC3B /* libtorch_ios.xcdatamodeld in Sources */,
 				4FD3A13123F2C43C00DADC3B /* SceneDelegate.swift in Sources */,
 			);

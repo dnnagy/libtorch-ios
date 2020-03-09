@@ -60,10 +60,15 @@ class ViewController: UIViewController {
         print("Shape:", output!["shape"])
         print("Data:", output!["data"])
     }
+    
+    func testFFTPack() {
+        TorchTests.testFFTPack()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        testWav2Cat()
+        testFFTPack()
+        //testWav2Cat()
         //testCNNBaseline()
     }
     
